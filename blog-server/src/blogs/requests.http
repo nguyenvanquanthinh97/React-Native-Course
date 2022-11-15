@@ -1,0 +1,28 @@
+### Create a blog
+POST http://localhost:3000/blogs
+Content-Type: application/json
+Authorization: : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6Imxlb0BnbWFpbC5jb20ifSwiaWF0IjoxNjY4MzQ2NzA4LCJleHAiOjE2NjgzNTAzMDh9.gte3Y4WDmLQvdjuEOSgkmqPT4pXLIh-ix_pQg0ibdsQ"
+
+{
+  "title": "a post",
+  "content": "content of a post"
+}
+
+### Update a blog
+PUT http://localhost:3000/blogs/1
+Content-Type: application/json
+
+{
+  "title": "a post [updated]",
+  "content": "content of a post [updated]"
+}
+
+### Get all blogs
+GET http://localhost:3000/blogs
+Authorization: : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJlbWFpbCI6Imxlb0BnbWFpbC5jb20ifSwiaWF0IjoxNjY4MzQ2NzA4LCJleHAiOjE2NjgzNTAzMDh9.gte3Y4WDmLQvdjuEOSgkmqPT4pXLIh-ix_pQg0ibdsQ"
+
+### Get one blog
+GET http://localhost:3000/blogs/1
+
+### Delete a blog
+DELETE  http://localhost:3000/blogs/1
