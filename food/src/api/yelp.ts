@@ -99,7 +99,7 @@ export interface YelpSearchDetailResponse {
 export default axios.create({
   baseURL: "https://api.yelp.com/v3/businesses",
   headers: {
-    Authorization:
-      "Bearer oHyFYSxKlDzyI9MuK3wbjJRd3GlCZOhv56SlnskEsRnUPIJmQbkmtjPoM4YCnkCCiiMx7cbLUWO6NZc7JTPiJJAT_dqE05ZlSCbTBB7yjSBHj_HeRq2m3THy8CRrY3Yx",
+    // @ts-ignore
+    Authorization: `Bearer ${process.env["api_key"]}`,
   },
 });
