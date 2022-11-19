@@ -1,6 +1,13 @@
-import { NavigationParams } from "react-navigation";
-import { NavigationStackScreenComponent } from "react-navigation-stack";
-import { NavigationBottomTabScreenComponent } from "react-navigation-tabs";
+import type React from "react";
+import type {
+  NavigationParams,
+  NavigationFocusInjectedProps,
+} from "react-navigation";
+import type { NavigationStackScreenComponent } from "react-navigation-stack";
+import type {
+  NavigationBottomTabScreenComponent,
+  NavigationTabScreenProps,
+} from "react-navigation-tabs";
 
 export {};
 
@@ -12,4 +19,14 @@ declare global {
   >;
   type BottomTabScreenComponentType<T = unknown> =
     NavigationBottomTabScreenComponent<NavigationParams, T>;
+  type withNavigationFocusBottomTabScreenComponentType<T = unknown> =
+    React.ComponentType<
+      NavigationTabScreenProps<NavigationParams, T> &
+        NavigationFocusInjectedProps
+    > & {
+      navigationOptions?: NavigationBottomTabScreenComponent<
+        NavigationParams,
+        T
+      >["navigationOptions"];
+    };
 }

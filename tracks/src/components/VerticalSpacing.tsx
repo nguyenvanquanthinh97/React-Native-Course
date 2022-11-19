@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { StyleSheet, View } from "react-native";
 
 interface VerticalSpacingProps {
-  children?: React.ReactElement;
+  children?: React.ReactNode | React.ReactNode[];
 }
 
 const VerticalSpacing: FC<VerticalSpacingProps> = ({ children }) => {

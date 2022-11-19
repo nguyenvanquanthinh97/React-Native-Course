@@ -42,7 +42,9 @@ const AuthForm: FC<AuthFormProps> = ({
         autoCapitalize="none"
         autoCompleteType={false}
       />
-      {errorMessage && <Text style={styles.errorMessage}>{errorMessage}</Text>}
+      {errorMessage ? (
+        <Text style={styles.errorMessage}>{errorMessage}</Text>
+      ) : null}
       <VerticalSpacing>
         <Button
           style={{ paddingHorizontal: 10 }}

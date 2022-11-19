@@ -68,6 +68,7 @@ const actions = {
         });
       }
     },
+
   signin:
     (dispatch: Function) =>
     async ({ email, password }: { email: string; password: string }) => {
@@ -88,13 +89,17 @@ const actions = {
         });
       }
     },
+
   signout: (dispatch: Function) => async () => {
     await AsyncStorage.removeItem("token");
     dispatch({ type: "signout" });
     navigate("Signin");
   },
-  clearErrorMessage: (dispatch: Function) => () =>
-    dispatch({ type: "clear_error_message" }),
+
+  clearErrorMessage: (dispatch: Function) => () => {
+    dispatch({ type: "clear_error_message" });
+  },
+
   tryLocalSignin: (dispatch: Function) => async () => {
     const token = await AsyncStorage.getItem("token");
     if (token) {
