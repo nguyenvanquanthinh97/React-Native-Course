@@ -2,19 +2,20 @@
 
 ## Includes:
 
-- rn-starter
-- food
-- blog
-- tracks (biggest project)
+- rn-starter (small)
+- food (medium)
+- blog (medium)
+- tracks (big)
+- favorite-places (big)
 
-### rn-starter
+### rn-starter (small)
 
 Learning the basic of react-native:
 
 - Rendering Elements in react-native
 - Doing stack navigation
 
-### food
+### food (medium)
 
 Learning and applying react-native knowledge into real project:
 
@@ -22,7 +23,7 @@ Learning and applying react-native knowledge into real project:
 - use Yelp as api to fetch restaurants
 - Doing stack navigation
 
-### blog
+### blog (medium)
 
 Learning and applying react-native knowledge into real project:
 
@@ -31,7 +32,7 @@ Learning and applying react-native knowledge into real project:
 - Doing stack navigation
 - use AsyncStorage on Phone as localStorage on Web
 
-### tracks (biggest project)
+### tracks (big)
 
 Learning and applying react-native knowledge into real project:
 
@@ -49,3 +50,17 @@ Learning and applying react-native knowledge into real project:
 - Well defined types in typescript.
 
 ![tracking-app.png](./tracks/assets/tracking-app.png)
+
+### favorite-places (big)
+
+Learning and applying react-native knowledge into real project:
+
+- Apply react-hook (useState/useReducer/useEffect/useContext/useCallback) and define customHook.
+- Use Stack Navigation v6
+- Apply useIsFocused to detect if screen is currently renderring on screen or not.
+- Rendering MapView.
+- Accessing location permission.
+- Retrieve Use Location.
+- Accessing ImagePicker to allow take photo
+- Well defined types in typescript.
+  ![favorite-places-app.png](./favorite-places/assets/Favorite-Places-demo.jpg)
